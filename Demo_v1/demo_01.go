@@ -29,7 +29,7 @@ const (
 	HR = 8585
 )
 
-// 通过var 来定义定义和申明全局变量
+// 通过var 来定义和申明全局变量
 //var name = "圆周长"
 //var length = 4
 //var aa = 5
@@ -61,7 +61,7 @@ type (
 func main() {
 	// 导入包后, 可以使用<PackageName>.<FuncName>来对包中的函数进行调用
 	// go语言是强编译语言, 如果导入包后未调用其中的函数或者类型将会报出编译错误
-	fmt.Printf(name + string(PI*length))
+	fmt.Printf(name + string(rune(PI*length)))
 	fmt.Printf("我没有钱" + time.ANSIC)
 	//fmt.Printf("我没有钱" + fmt.commaSpaceString)
 	//fmt.Printf("我没有钱" + time.stdMonth)
